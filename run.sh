@@ -15,7 +15,7 @@ function install_gems() {
   if [[ ! -z "$GEMS" ]]; then
     echo -e "\nInstalling gem(s): $GEMS"
     for GEM in $GEMS; do
-      echo -e "\ngem '$GEM'" >> Gemfile
+      echo -e "\ngem $GEM" >> Gemfile
     done
     bundle install
   fi
